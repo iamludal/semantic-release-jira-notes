@@ -32,7 +32,7 @@ The plugin should then be added to your config file.
     "@semantic-release/commit-analyzer",
     ["semantic-release-jira-notes", {
       "jiraHost": "iamludal.atlassian.net",
-      "ticketPrefixes": ["ATP", "OMS"], // optional
+      "ticketPrefixes": ["ATP", "OMS"]
     }]
     "@semantic-release/git",
     "@semantic-release/github"
