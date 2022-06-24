@@ -5,6 +5,12 @@
   "main": "src/index.js",
   "author": "iamludal",
   "license": "MIT",
+  "keywords": [
+    "jira",
+    "semantic-release",
+    "release-notes",
+    "changelog"
+  ],
   "dependencies": {
     "@semantic-release/error": "2.2.0",
     "@semantic-release/release-notes-generator": "^10.0.3",
