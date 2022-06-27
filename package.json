@@ -1,10 +1,10 @@
 {
   "name": "semantic-release-jira-notes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Semantic Release plugin to add JIRA issues link to the release notes",
   "main": "src/index.js",
   "author": "iamludal",
-  "homepage": "https//github.com/iamludal/semantic-release-jira-notes",
+  "homepage": "https://github.com/iamludal/semantic-release-jira-notes",
   "repository": "https://github.com/iamludal/semantic-release-jira-notes",
   "license": "MIT",
   "keywords": [
