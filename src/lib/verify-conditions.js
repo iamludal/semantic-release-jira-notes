@@ -6,13 +6,13 @@ const constants = require("./constants");
 const { INPUTS, TICKET_PREFIX_REGEX, DOMAIN_NAME_REGEX } = constants;
 
 module.exports = async pluginConfig => {
-  const ticketPrefixes = pluginConfig[INPUTS.ticketPrefixes] ?? [];
+  const ticketPrefixes = pluginConfig[INPUTS.ticketPrefixes];
   const jiraHost = pluginConfig[INPUTS.jiraHost];
   const errors = [];
 
   const AggregateError = (await AggregateErrorPromise).default;
 
-  if (!Array.isArray(ticketPrefixes)) {
+  if (ticketPrefixes && !Array.isArray(ticketPrefixes)) {
     errors.push(new SemanticReleaseError(INPUTS.ticketPrefixes, Array.name));
   } else {
     for (const prefix of ticketPrefixes) {
