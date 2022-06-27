@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-jira-notes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Semantic Release plugin to add JIRA issues link to the release notes",
   "main": "src/index.js",
   "author": "iamludal",
