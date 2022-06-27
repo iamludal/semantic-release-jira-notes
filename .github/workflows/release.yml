@@ -1,0 +1,30 @@
+name: Release 🚀
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo 📥
+        uses: actions/checkout@v3
+
+      - name: Set up node 🔧
+        uses: actions/setup-node@v3
+
+      - name: Semantic Release 🚀
+        id: semantic-release
+        uses: cycjimmy/semantic-release-action@v3.0.0
+        with:
+          extra_plugins: |
+            @semantic-release/commit-analyzer@9.0.2
+            @semantic-release/release-notes-generator@10.0.3
+            @semantic-release/npm@9.0.1
+            @semantic-release/changelog@6.0.1
+            @semantic-release/github@8.0.4
+            @semantic-release/git@10.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
