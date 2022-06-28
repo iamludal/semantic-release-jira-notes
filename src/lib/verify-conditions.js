@@ -14,7 +14,7 @@ module.exports = async pluginConfig => {
 
   if (ticketPrefixes && !Array.isArray(ticketPrefixes)) {
     errors.push(new SemanticReleaseError(INPUTS.ticketPrefixes, Array.name));
-  } else {
+  } else if (ticketPrefixes) {
     for (const prefix of ticketPrefixes) {
       if (!TICKET_PREFIX_REGEX.test(prefix)) {
         errors.push(new RegexError(prefix, TICKET_PREFIX_REGEX));
