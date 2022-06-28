@@ -1,9 +1,11 @@
 # semantic-release-jira-notes
 
+[![npm latest version](https://img.shields.io/npm/v/semantic-release-jira-notes/latest.svg)](https://www.npmjs.com/package/semantic-release-jira-notes)
+
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to add links to
 JIRA issues in the release notes.
 
-[![npm latest version](https://img.shields.io/npm/v/semantic-release-jira-notes/latest.svg)](https://www.npmjs.com/package/semantic-release-jira-notes)
+For each JIRA issue detected in the release notes, it will add a link that brings directly to this issue on JIRA.
 
 
 | Step               | Description                                          |
@@ -14,22 +16,27 @@ JIRA issues in the release notes.
 
 ## Usage
 
-First, install the plugin.
+### Installation
 
 ```bash
 $ npm install --save-dev semantic-release-jira-notes
 $ yarn add --dev semantic-release-jira-notes
 ```
 
+### Inputs
 
-## Configuration
+| Name           | Required | Description                                                            |
+| -------------- | :------: | ---------------------------------------------------------------------- |
+| jiraHost       |    ✅     | Your JIRA host domain name                                             |
+| ticketPrefixes |    ❌     | Ticket prefixes to match. If not provided, match all tickets prefixes. |
 
-The plugin should then be added to your config file.
+### Configuration
 
 ```json
 {
   "plugins": [
     "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
     ["semantic-release-jira-notes", {
       "jiraHost": "iamludal.atlassian.net",
       "ticketPrefixes": ["ATP", "OMS"]
@@ -40,13 +47,6 @@ The plugin should then be added to your config file.
 }
 ```
 
-**Note:** you don't need to use `@semantic-release/release-notes-generator` as it already uses
-it under the hood.
+> **Note:** don't forget to use `@semantic-release/release-notes-generator` before, as it will generate
+the release notes needed for `semantic-release-jira-notes`.
 
-
-### Inputs
-
-| Name           | Required | Description                                                            |
-| -------------- | :------: | ---------------------------------------------------------------------- |
-| jiraHost       |    ✅     | Your JIRA host domain name                                             |
-| ticketPrefixes |    ❌     | Ticket prefixes to match. If not provided, match all tickets prefixes. |

@@ -15,7 +15,6 @@
   ],
   "dependencies": {
     "@semantic-release/error": "2.2.0",
-    "@semantic-release/release-notes-generator": "^10.0.3",
     "aggregate-error": "^4.0.1"
   }
 }
