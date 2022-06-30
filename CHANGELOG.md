@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/iamludal/semantic-release-jira-notes/compare/2.0.0...2.0.1) (2022-06-30)
+
+
+### Bug Fixes
+
+* **generate-notes:** get notes from context ([d988d34](https://github.com/iamludal/semantic-release-jira-notes/commit/d988d345e63626ef0662d1a759a2b44a70ce59c6))
+
 # [2.0.0](https://github.com/iamludal/semantic-release-jira-notes/compare/1.0.3...2.0.0) (2022-06-28)
 
 
