@@ -1,6 +1,6 @@
 const { INPUTS, ISSUE_REGEX } = require("./constants");
 
-module.exports = async pluginConfig => {
+module.exports = async (pluginConfig, { nextRelease: { notes } }) => {
   const ticketPrefixes = pluginConfig[INPUTS.ticketPrefixes];
   const jiraHost = pluginConfig[INPUTS.jiraHost];
 
