@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/iamludal/semantic-release-jira-notes/compare/2.0.1...3.0.0) (2022-07-01)
+
+
+### Bug Fixes
+
+* **generate-notes:** use release-notes-generator plugin ([e7c0770](https://github.com/iamludal/semantic-release-jira-notes/commit/e7c0770d88727f397ddb62083598c3541a92239f))
+
+
+### BREAKING CHANGES
+
+* **generate-notes:** users should now remove release-notes-generator
+from their plugin list.
+
 ## [2.0.1](https://github.com/iamludal/semantic-release-jira-notes/compare/2.0.0...2.0.1) (2022-06-30)
 
 
