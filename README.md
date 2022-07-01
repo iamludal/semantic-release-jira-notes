@@ -36,7 +36,6 @@ $ yarn add --dev semantic-release-jira-notes
 {
   "plugins": [
     "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
     ["semantic-release-jira-notes", {
       "jiraHost": "iamludal.atlassian.net",
       "ticketPrefixes": ["ATP", "OMS"]
@@ -47,6 +46,4 @@ $ yarn add --dev semantic-release-jira-notes
 }
 ```
 
-> **Note:** don't forget to use `@semantic-release/release-notes-generator` before, as it will generate
-the release notes needed for `semantic-release-jira-notes`.
-
+> **Note:** you don't need to use `@semantic-release/release-notes-generator`.

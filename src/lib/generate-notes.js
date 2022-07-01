@@ -1,8 +1,10 @@
 const { INPUTS, ISSUE_REGEX } = require("./constants");
+const { generateNotes } = require("@semantic-release/release-notes-generator");
 
-module.exports = async (pluginConfig, { nextRelease: { notes } }) => {
+module.exports = async (pluginConfig, context) => {
   const ticketPrefixes = pluginConfig[INPUTS.ticketPrefixes];
   const jiraHost = pluginConfig[INPUTS.jiraHost];
+  const notes = await generateNotes(pluginConfig, context);
 
   let issueRegex;
 
