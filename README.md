@@ -46,4 +46,27 @@ $ yarn add --dev semantic-release-jira-notes
 }
 ```
 
-> **Note:** you don't need to use `@semantic-release/release-notes-generator`.
+> **Note**: this plugin uses `@semantic-release/release-notes-generator` under the hood, so you don't need to use it anymore.
+
+You can also use options defined by [@semantic-release/release-notes-generator](https://github.com/semantic-release/release-notes-generator#options).
+
+```json
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    ["semantic-release-jira-notes", {
+      "jiraHost": "iamludal.atlassian.net",
+      "preset": "conventionalcommits",
+      "presetConfig": {
+        "types": [
+          { "type": "feat", "section": "Features" },
+          { "type": "fix", "section": "Bug Fixes" },
+          { "type": "build", "section": "Dependencies Updates", "hidden": false }
+        ]
+      }
+    }]
+    "@semantic-release/git",
+    "@semantic-release/github"
+  ]
+}
+```
