@@ -14,6 +14,10 @@ For each JIRA issue detected in the release notes, it will add a link that bring
 | `generateNotes`    | Generate the release notes with links to JIRA issues |
 
 
+## Preview
+
+![Preview](./docs/jira-link.png)
+
 ## Usage
 
 ### Installation
