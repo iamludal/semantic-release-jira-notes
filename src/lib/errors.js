@@ -1,21 +1,21 @@
-const SemanticReleaseError = require("@semantic-release/error");
+import SemanticReleaseError from "@semantic-release/error";
 
-class RegexError extends SemanticReleaseError {
+export class RegexError extends SemanticReleaseError {
   constructor(value, pattern) {
     super(`Value '${value}' does not match regex: ${pattern}`);
   }
 }
 
-class InvalidTypeError extends SemanticReleaseError {
+export class InvalidTypeError extends SemanticReleaseError {
   constructor(variableName, expectedType) {
     super(`${variableName} should be of type: ${expectedType}`);
   }
 }
 
-class InputRequiredError extends SemanticReleaseError {
+export class InputRequiredError extends SemanticReleaseError {
   constructor(inputName) {
     super(`Input '${inputName}' is required`);
   }
 }
 
-module.exports = { RegexError, InvalidTypeError, InputRequiredError };
+export default { RegexError, InvalidTypeError, InputRequiredError };
