@@ -1,4 +1,4 @@
-const verifyConditions = require("./lib/verify-conditions");
-const generateNotes = require("./lib/generate-notes");
+import verifyConditions from "./lib/verify-conditions.js";
+import generateNotes from "./lib/generate-notes.js";
 
-module.exports = { verifyConditions, generateNotes };
+export default { verifyConditions, generateNotes };

@@ -5,8 +5,12 @@
   "main": "src/index.js",
   "author": "iamludal",
   "homepage": "https://github.com/iamludal/semantic-release-jira-notes",
-  "repository": "https://github.com/iamludal/semantic-release-jira-notes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamludal/semantic-release-jira-notes.git"
+  },
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "jira",
     "semantic-release",
@@ -14,8 +18,7 @@
     "changelog"
   ],
   "dependencies": {
-    "@semantic-release/error": "2.2.0",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "aggregate-error": "^4.0.1"
+    "@semantic-release/error": "^4.0.0",
+    "@semantic-release/release-notes-generator": "^13.0.0"
   }
 }
