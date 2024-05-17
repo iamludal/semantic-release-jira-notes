@@ -1,11 +1,9 @@
-const { InputRequiredError, RegexError } = require("./errors");
-const SemanticReleaseError = require("@semantic-release/error");
-const AggregateErrorPromise = import("aggregate-error");
-const constants = require("./constants");
+import { InputRequiredError, RegexError } from "./errors.js";
+import SemanticReleaseError from "@semantic-release/error";
+import AggregateErrorPromise from "aggregate-error";
+import { INPUTS, TICKET_PREFIX_REGEX, DOMAIN_NAME_REGEX } from "./constants.js";
 
-const { INPUTS, TICKET_PREFIX_REGEX, DOMAIN_NAME_REGEX } = constants;
-
-module.exports = async pluginConfig => {
+const verifyConditions = async pluginConfig => {
   const ticketPrefixes = pluginConfig[INPUTS.ticketPrefixes];
   const jiraHost = pluginConfig[INPUTS.jiraHost];
   const errors = [];
@@ -32,3 +30,5 @@ module.exports = async pluginConfig => {
     throw new AggregateError(errors);
   }
 };
+
+export { verifyConditions };

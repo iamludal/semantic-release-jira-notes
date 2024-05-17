@@ -1,8 +1,12 @@
 {
   "name": "semantic-release-jira-notes",
   "version": "3.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "description": "Semantic Release plugin to add JIRA issues link to the release notes",
   "main": "src/index.js",
+  "type": "module",
   "author": "iamludal",
   "homepage": "https://github.com/iamludal/semantic-release-jira-notes",
   "repository": "https://github.com/iamludal/semantic-release-jira-notes",
@@ -14,8 +18,14 @@
     "changelog"
   ],
   "dependencies": {
-    "@semantic-release/error": "2.2.0",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "aggregate-error": "^4.0.1"
+    "@semantic-release/error": "4.0.0",
+    "@semantic-release/release-notes-generator": "^13.0.0",
+    "aggregate-error": "^5.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier --write src/**/*.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
