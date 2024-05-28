@@ -1,6 +1,25 @@
 # semantic-release-jira-notes
 
-[![npm latest version](https://img.shields.io/npm/v/semantic-release-jira-notes/latest.svg)](https://www.npmjs.com/package/semantic-release-jira-notes)
+[![ESM-only package][package]][package-url]
+[![NPM version][npm]][npm-url]
+[![Node version][node]][node-url]
+[![Dependencies status][deps]][deps-url]
+[![Install size][size]][size-url]
+
+[package]: https://img.shields.io/badge/package-ESM--only-ffe536.svg
+[package-url]: https://nodejs.org/api/esm.html
+
+[npm]: https://img.shields.io/npm/v/semantic-release-jira-notes/latest.svg
+[npm-url]: https://www.npmjs.com/package/semantic-release-jira-notes
+
+[node]: https://img.shields.io/node/v/semantic-release-jira-notes/latest.svg
+[node-url]: https://nodejs.org
+
+[deps]: https://img.shields.io/librariesio/release/npm/semantic-release-jira-notes
+[deps-url]: https://libraries.io/npm/semantic-release-jira-notes/tree
+
+[size]: https://packagephobia.com/badge?p=semantic-release-jira-notes
+[size-url]: https://packagephobia.com/result?p=semantic-release-jira-notes
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to add links to
 JIRA issues in the release notes.
@@ -23,8 +42,12 @@ For each JIRA issue detected in the release notes, it will add a link that bring
 ### Installation
 
 ```bash
-$ npm install --save-dev semantic-release-jira-notes
-$ yarn add --dev semantic-release-jira-notes
+# npm
+npm install --save-dev semantic-release-jira-notes
+# yarn
+yarn add --dev semantic-release-jira-notes
+# pnpm
+pnpm add --save-dev semantic-release-jira-notes
 ```
 
 ### Inputs

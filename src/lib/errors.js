@@ -1,4 +1,4 @@
-const SemanticReleaseError = require("@semantic-release/error");
+import SemanticReleaseError from "@semantic-release/error";
 
 class RegexError extends SemanticReleaseError {
   constructor(value, pattern) {
@@ -18,4 +18,4 @@ class InputRequiredError extends SemanticReleaseError {
   }
 }
 
-module.exports = { RegexError, InvalidTypeError, InputRequiredError };
+export { RegexError, InvalidTypeError, InputRequiredError };
