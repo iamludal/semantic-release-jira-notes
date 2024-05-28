@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/iamludal/semantic-release-jira-notes/compare/3.0.0...4.0.0) (2024-05-28)
+
+
+### Code Refactoring
+
+* update project to ESM ([#5](https://github.com/iamludal/semantic-release-jira-notes/issues/5)) ([1d18aec](https://github.com/iamludal/semantic-release-jira-notes/commit/1d18aecf617dc7363a854a58577c2fcf4197016d))
+
+
+### BREAKING CHANGES
+
+* migrate imports from CommonJS to ESM
+
 # [3.0.0](https://github.com/iamludal/semantic-release-jira-notes/compare/2.0.1...3.0.0) (2022-07-01)
 
 
