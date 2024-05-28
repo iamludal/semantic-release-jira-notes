@@ -97,3 +97,7 @@ You can also use options defined by [@semantic-release/release-notes-generator](
   ]
 }
 ```
+
+## Contributing
+
+You are welcome to contribute to this repository. Please refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
