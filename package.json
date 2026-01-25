@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@semantic-release/error": "4.0.0",
-    "@semantic-release/release-notes-generator": "^13.0.0",
+    "@semantic-release/release-notes-generator": "^14.1.0",
     "aggregate-error": "^5.0.0"
   },
   "scripts": {
